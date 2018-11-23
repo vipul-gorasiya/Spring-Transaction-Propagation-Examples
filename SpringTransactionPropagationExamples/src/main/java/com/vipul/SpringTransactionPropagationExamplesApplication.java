@@ -1,10 +1,8 @@
 package com.vipul;
 
-import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -19,11 +17,8 @@ public class SpringTransactionPropagationExamplesApplication {
 		ConfigurableApplicationContext context = SpringApplication
 				.run(SpringTransactionPropagationExamplesApplication.class, args);
 		PersonService bean = context.getBean(PersonService.class);
-		bean.callTransactionalMethods();
+		bean.callTransactionalMethodsWithoutTrasaction();
+		bean.callTransactionalMethodsWithTrasaction();
 	}
 
-	@Bean
-	public ModelMapper modelMapper() {
-		return new ModelMapper();
-	}
 }
