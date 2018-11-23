@@ -10,5 +10,5 @@
 
 1. Import project as Maven project
 2. Run application as Spring Boot Application
-3. SpringTransactionPropagationExamplesApplication.java](SpringTransactionPropagationExamples/src/main/java/com/vipul/SpringTransactionPropagationExamplesApplication.java) gets the PersonService bean and calls callTransactionalMethodsWithoutTrasaction() and callTransactionalMethodsWithTrasaction()
+3. [SpringTransactionPropagationExamplesApplication.java](SpringTransactionPropagationExamples/src/main/java/com/vipul/SpringTransactionPropagationExamplesApplication.java) gets the PersonService bean and calls callTransactionalMethodsWithoutTrasaction() and callTransactionalMethodsWithTrasaction()
 4. Observe log and relate it with PersonService logging statements.
