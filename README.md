@@ -2,7 +2,7 @@
 
 ## How is it used in example
 
-- [PersonService.java](SpringTransactionPropagationExamples/src/main/java/com/vipul/service/PersonService.java) has different methods defined with propagations as NEVER, NOT_SUPPORTED, SUPPORTED, MANDATORY, REQUIRED, REQUIRES_NEW and NESTED.
+- [PersonService.java](SpringTransactionPropagationExamples/src/main/java/com/vipul/service/PersonService.java) has different methods defined with propagations levels as NEVER, NOT_SUPPORTED, SUPPORTED, MANDATORY, REQUIRED, REQUIRES_NEW and NESTED.
 - PersonService.java has one non-transactional method 'callTransactionalMethodsWithoutTrasaction()' calling all propagation methods to test the behavior when transaction is not present.
 - PersonService.java has one transactional method 'callTransactionalMethodsWithTrasaction()' calling all propagation methods to test behavior when transaction is present.
 
